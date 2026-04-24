@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Play, X } from "lucide-react";
 import SectionHeader from "./SectionHeader";
 
@@ -12,6 +12,48 @@ const videos = [
 
 const Testimonials = () => {
   const [active, setActive] = useState<string | null>(null);
+  const closeBtnRef = useRef<HTMLButtonElement>(null);
+  const lastTriggerRef = useRef<HTMLButtonElement | null>(null);
+
+  const openVideo = (id: string, trigger: HTMLButtonElement) => {
+    lastTriggerRef.current = trigger;
+    setActive(id);
+  };
+
+  const closeVideo = () => {
+    setActive(null);
+    // Restore focus to the trigger that opened the lightbox
+    requestAnimationFrame(() => lastTriggerRef.current?.focus());
+  };
+
+  // Lock scroll, handle Escape, basic focus trap
+  useEffect(() => {
+    if (!active) return;
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    // Auto-focus the close button on open
+    requestAnimationFrame(() => closeBtnRef.current?.focus());
+
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        closeVideo();
+      }
+      if (e.key === "Tab") {
+        // Trap focus on the close button (only focusable element in the modal)
+        e.preventDefault();
+        closeBtnRef.current?.focus();
+      }
+    };
+
+    window.addEventListener("keydown", handleKey);
+    return () => {
+      window.removeEventListener("keydown", handleKey);
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [active]);
 
   return (
     <section id="testimonials" className="bg-deep relative overflow-hidden">
@@ -30,7 +72,7 @@ const Testimonials = () => {
             <button
               key={v.id}
               type="button"
-              onClick={() => setActive(v.id)}
+              onClick={(e) => openVideo(v.id, e.currentTarget)}
               className="group card-elevated rounded-sm overflow-hidden border border-gold-soft hover-lift text-left"
               aria-label={`Assistir depoimento de ${v.name}`}
             >
