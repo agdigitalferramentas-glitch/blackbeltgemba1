@@ -25,7 +25,7 @@ const Mentoring = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           <div>
             <SectionLabel>Suporte especializado</SectionLabel>
-            <h2 className="font-display text-3xl md:text-5xl leading-[1.1] mt-5 text-foreground">
+            <h2 className="font-display font-light text-3xl md:text-5xl leading-[1.1] mt-5 text-foreground tracking-tight">
               Consultores que <span className="text-gold">vivem o que ensinam.</span> Não apenas professores.
             </h2>
             <p className="mt-6 text-dim text-base md:text-lg leading-relaxed">

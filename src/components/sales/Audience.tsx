@@ -33,7 +33,7 @@ const Audience = () => {
       <div className="container relative py-24 md:py-32">
         <div className="max-w-3xl">
           <SectionLabel>Para quem é esta formação</SectionLabel>
-          <h2 className="font-display text-3xl md:text-5xl leading-[1.1] mt-5 text-foreground">
+          <h2 className="font-display font-light text-3xl md:text-5xl leading-[1.1] mt-5 text-foreground tracking-tight">
             Para quem já sabe que <span className="text-gold">o topo exige mais</span> do que o básico.
           </h2>
         </div>

@@ -24,7 +24,7 @@ const Positioning = () => {
       <div className="container py-24 md:py-32">
         <div className="max-w-3xl">
           <SectionLabel>Por que o Black Belt é diferente</SectionLabel>
-          <h2 className="font-display text-3xl md:text-5xl leading-[1.1] mt-5 text-foreground">
+          <h2 className="font-display font-light text-3xl md:text-5xl leading-[1.1] mt-5 text-foreground tracking-tight">
             Não é mais sobre aplicar ferramentas.{" "}
             <span className="text-gold">É sobre gerar milhões em resultado</span>{" "}
             e provar que você vale cada centavo.
