@@ -1,5 +1,5 @@
 import heroImage from "@/assets/hero-executive.jpg";
-import logoImage from "@/assets/black-belt-logo.png";
+import logoImage from "@/assets/black-belt-logo-original.jpg";
 
 const stats = [
   { value: "168h", label: "Carga horária total" },
