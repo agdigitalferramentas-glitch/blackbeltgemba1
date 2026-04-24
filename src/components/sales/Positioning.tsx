@@ -1,0 +1,60 @@
+import SectionLabel from "./SectionLabel";
+
+const cards = [
+  {
+    icon: "📊",
+    title: "Profundidade Técnica",
+    text: "O Black Belt aprofunda cada fase do DMAIC com ferramentas complementares que o Green Belt não cobre — incluindo Testes de Hipóteses e MSA para Dados de Atributo.",
+  },
+  {
+    icon: "💰",
+    title: "Impacto Financeiro Real",
+    text: "A certificação mais exigida quando o assunto é economizar ou gerar milhões para a empresa. O mercado paga salários de elite para quem domina esse nível.",
+  },
+  {
+    icon: "🎯",
+    title: "Liderança Estratégica",
+    text: "Você não apenas executa projetos — gerencia times, orienta Green Belts e responde diretamente para a alta direção sobre resultados de melhoria contínua.",
+  },
+];
+
+const Positioning = () => {
+  return (
+    <section className="relative bg-mid">
+      <div className="container py-24 md:py-32">
+        <div className="max-w-3xl">
+          <SectionLabel>Por que o Black Belt é diferente</SectionLabel>
+          <h2 className="font-display text-3xl md:text-5xl leading-[1.1] mt-5 text-foreground">
+            Não é mais sobre aplicar ferramentas.{" "}
+            <span className="text-gold">É sobre gerar milhões em resultado</span>{" "}
+            e provar que você vale cada centavo.
+          </h2>
+          <p className="mt-6 text-dim text-base md:text-lg leading-relaxed">
+            O Green Belt resolve problemas. O Black Belt lidera transformações
+            de alta complexidade, com impacto direto no resultado financeiro
+            da organização. Com 168 horas de formação avançada, você vai além
+            do DMAIC convencional — domina Testes de Hipóteses, DOE, análise
+            de sistemas de medição para dados de atributo, Logística Lean,
+            Kaizen e ferramentas que poucos profissionais no Brasil conhecem
+            na profundidade necessária para gerar savings reais e mensuráveis.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-5 mt-14">
+          {cards.map((c) => (
+            <div
+              key={c.title}
+              className="card-premium hover-lift rounded-xl p-7 group"
+            >
+              <div className="text-3xl text-gold mb-4">{c.icon}</div>
+              <h3 className="font-display text-xl text-foreground mb-3">{c.title}</h3>
+              <p className="text-dim text-sm leading-relaxed">{c.text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Positioning;
