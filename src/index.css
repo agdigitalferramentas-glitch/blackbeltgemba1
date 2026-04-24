@@ -171,6 +171,64 @@
   }
   .animate-fade-up { animation: fade-up 0.8s var(--transition-smooth) both; }
 
+  /* Corporate background motion effects */
+  .bg-grid {
+    background-image:
+      linear-gradient(hsl(var(--accent) / 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--accent) / 0.06) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+  .bg-grid-fade {
+    -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+            mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  }
+  .gradient-format {
+    background: linear-gradient(180deg, hsl(214 32% 14%) 0%, hsl(215 38% 10%) 100%);
+  }
+
+  @keyframes drift-slow {
+    0%, 100% { transform: translate3d(0, 0, 0) scale(1); opacity: 0.55; }
+    50% { transform: translate3d(3%, -2%, 0) scale(1.08); opacity: 0.78; }
+  }
+  @keyframes drift-slow-rev {
+    0%, 100% { transform: translate3d(0, 0, 0) scale(1); opacity: 0.5; }
+    50% { transform: translate3d(-3%, 2%, 0) scale(1.06); opacity: 0.7; }
+  }
+  .orb {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(70px);
+    pointer-events: none;
+    will-change: transform, opacity;
+  }
+  .orb-gold {
+    background: radial-gradient(circle, hsl(var(--accent) / 0.28), transparent 65%);
+    animation: drift-slow 18s ease-in-out infinite;
+  }
+  .orb-steel {
+    background: radial-gradient(circle, hsl(var(--primary-light) / 0.32), transparent 65%);
+    animation: drift-slow-rev 22s ease-in-out infinite;
+  }
+
+  @keyframes shine-sweep {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(220%); }
+  }
+  .section-divider {
+    position: relative;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, hsl(var(--accent) / 0.45), transparent);
+    overflow: hidden;
+  }
+  .section-divider::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, hsl(var(--accent-bright) / 0.9), transparent);
+    width: 30%;
+    animation: shine-sweep 7s ease-in-out infinite;
+  }
+
   .hover-lift {
     transition: transform 280ms var(--transition-smooth),
                 border-color 280ms var(--transition-smooth),
