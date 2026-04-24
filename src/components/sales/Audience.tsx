@@ -31,14 +31,11 @@ const Audience = () => {
            style={{ background: "radial-gradient(circle, hsl(43 56% 54% / 0.12), transparent 60%)" }} />
       <div className="absolute inset-0 bg-grid opacity-[0.4] pointer-events-none" />
       <div className="container relative py-12 md:py-16">
-        <div className="max-w-3xl">
-          <SectionLabel>Para quem é esta formação</SectionLabel>
-          <h2 className="font-display font-light text-3xl md:text-5xl leading-[1.1] mt-5 text-foreground tracking-tight">
-            Para quem já sabe que <span className="text-gold">o topo exige mais</span> do que o básico.
-          </h2>
-        </div>
+        <SectionHeader eyebrow="Para quem é esta formação">
+          Para quem já sabe que <span className="text-gold">o topo exige mais</span> do que o básico.
+        </SectionHeader>
 
-        <div className="grid md:grid-cols-3 gap-5 mt-14">
+        <div className="grid md:grid-cols-3 gap-5 mt-12">
           {personas.map((p) => (
             <div key={p.title} className="card-premium hover-lift rounded-xl p-7 flex flex-col">
               <div className="text-3xl mb-4">{p.icon}</div>

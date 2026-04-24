@@ -110,16 +110,15 @@ const modules = [
 
 const Modules = () => {
   return (
-    <section id="modules" className="bg-background">
-      <div className="container py-12 md:py-16">
-        <div className="max-w-3xl">
-          <SectionLabel>Conteúdo completo — 168 horas</SectionLabel>
-          <h2 className="font-display font-light text-3xl md:text-5xl leading-[1.1] mt-5 text-foreground tracking-tight">
-            8 Módulos. <span className="text-gold">O DMAIC na sua forma</span> mais completa e avançada.
-          </h2>
-        </div>
+    <section id="modules" className="bg-background relative overflow-hidden">
+      <div className="absolute inset-0 bg-grid bg-grid-fade opacity-50 pointer-events-none" />
+      <div className="orb orb-steel w-[460px] h-[460px] top-20 -right-32" />
+      <div className="container relative py-12 md:py-16">
+        <SectionHeader eyebrow="Conteúdo completo — 168 horas">
+          8 Módulos. <span className="text-gold">O DMAIC na sua forma</span> mais completa e avançada.
+        </SectionHeader>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mt-14">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mt-12">
           {modules.map((m) => (
             <article
               key={m.n}

@@ -15,15 +15,11 @@ const inclusos: { icon: "check" | "star"; text: string }[] = [
 const Pricing = () => {
   return (
     <section id="pricing" className="gradient-pricing relative overflow-hidden">
+      <div className="orb orb-gold w-[520px] h-[520px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
       <div className="container relative py-12 md:py-16">
-        <div className="max-w-3xl mx-auto text-center">
-          <div className="flex justify-center">
-            <SectionLabel>Investimento</SectionLabel>
-          </div>
-          <h2 className="font-display font-light text-3xl md:text-5xl leading-[1.1] mt-5 text-foreground tracking-tight">
-            O retorno de um Black Belt começa <span className="text-gold-deep">muito antes</span> de terminar o curso.
-          </h2>
-        </div>
+        <SectionHeader eyebrow="Investimento">
+          O retorno de um Black Belt começa <span className="text-gold-deep">muito antes</span> de terminar o curso.
+        </SectionHeader>
 
         <div className="mt-12 max-w-[720px] mx-auto">
           <div
