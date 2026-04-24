@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="gold-divider" />
       <div className="container py-12 text-center">
         <div className="font-display text-2xl text-foreground tracking-wide">
-          Gemba Group <span className="text-gold-deep mx-2">|</span> Produzzi
+          Gemba Group
         </div>
         <p className="mt-4 text-dimmer text-xs md:text-sm leading-relaxed max-w-xl mx-auto">
           © 2026 Gemba Group. Todos os direitos reservados.
