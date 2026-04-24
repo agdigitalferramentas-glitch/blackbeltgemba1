@@ -8,18 +8,16 @@ export default {
     container: {
       center: true,
       padding: "1.5rem",
-      screens: {
-        "2xl": "1280px",
-      },
+      screens: { "2xl": "1280px" },
     },
     extend: {
       fontFamily: {
-        display: ['"Playfair Display"', "serif"],
-        body: ['"DM Sans"', "system-ui", "sans-serif"],
-        stat: ['"Bebas Neue"', "sans-serif"],
+        display: ['"Barlow Condensed"', '"Lato"', "sans-serif"],
+        body: ['"Lato"', "system-ui", "sans-serif"],
+        stat: ['"Bebas Neue"', '"Barlow Condensed"', "sans-serif"],
       },
       colors: {
-        border: "hsl(var(--border-strong) / 0.2)",
+        border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
@@ -27,12 +25,12 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
-          glow: "hsl(var(--primary-glow))",
+          deep: "hsl(var(--primary-deep))",
+          light: "hsl(var(--primary-light))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
-          bright: "hsl(var(--secondary-bright))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -45,6 +43,7 @@ export default {
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
+          bright: "hsl(var(--accent-bright))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -69,15 +68,10 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        "slide-up": {
-          from: { opacity: "0", transform: "translateY(100%)" },
-          to: { opacity: "1", transform: "translateY(0)" },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.3s ease-out",
         "accordion-up": "accordion-up 0.3s ease-out",
-        "slide-up": "slide-up 0.4s ease-out",
       },
     },
   },

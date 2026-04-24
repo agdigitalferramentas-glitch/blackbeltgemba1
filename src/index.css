@@ -2,162 +2,174 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Black Belt Lean Six Sigma — Premium Navy + Gold Design System
+/* Black Belt Lean Six Sigma — Visual identity matched to official Gemba PDF
+   Steel-blue executive palette · Lato sans · subtle gold accent
    All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    /* Navy backgrounds */
-    --background: 215 55% 8%;          /* #0a1220 */
-    --background-deep: 213 50% 6%;     /* #060d16 */
-    --background-darker: 215 50% 7%;   /* #080f1a */
-    --background-mid: 213 53% 10%;     /* #0d1b2a */
-    --background-elev: 218 55% 16%;    /* #0f2040 a bit lifted */
+    /* Steel-blue palette (matches PDF) */
+    --background: 215 38% 9%;          /* #0e1828 deep steel navy */
+    --background-deep: 215 40% 6%;     /* near-black navy */
+    --background-darker: 215 38% 7%;
+    --background-mid: 214 32% 14%;     /* #19273a */
+    --background-elev: 214 30% 18%;    /* lifted card surface */
+    --background-light: 210 14% 92%;   /* off-white like PDF body slides */
 
     --foreground: 0 0% 100%;
-    --foreground-soft: 42 30% 88%;     /* #e8e4d8 */
-    --foreground-muted: 213 25% 65%;   /* #8fa3bc */
-    --foreground-dim: 213 22% 52%;     /* #6b84a0 */
+    --foreground-soft: 210 18% 92%;
+    --foreground-muted: 213 18% 70%;
+    --foreground-dim: 213 16% 56%;
 
-    --card: 215 55% 10%;
+    --card: 215 35% 12%;
     --card-foreground: 0 0% 100%;
 
-    --popover: 215 55% 10%;
+    --popover: 215 35% 12%;
     --popover-foreground: 0 0% 100%;
 
-    /* Gold accent */
-    --primary: 43 56% 54%;             /* #c9a84c */
-    --primary-foreground: 215 55% 8%;
-    --primary-glow: 44 82% 69%;        /* #f0cc70 */
+    /* Brand steel blue (the dominant brand color from PDF) */
+    --primary: 214 45% 28%;            /* #284363 PDF blue band */
+    --primary-foreground: 0 0% 100%;
+    --primary-deep: 215 50% 20%;       /* darker steel */
+    --primary-light: 213 38% 42%;      /* hover/highlight */
 
-    /* Steel blue secondary */
-    --secondary: 210 56% 23%;          /* #1a3a5c */
+    --secondary: 215 25% 18%;
     --secondary-foreground: 0 0% 100%;
-    --secondary-bright: 210 60% 30%;   /* #1e4d78 */
 
-    --muted: 215 35% 14%;
-    --muted-foreground: 213 25% 65%;
+    --muted: 215 25% 14%;
+    --muted-foreground: 213 18% 70%;
 
-    --accent: 43 56% 54%;
-    --accent-foreground: 215 55% 8%;
+    /* Subtle gold accent (from logo bell-curve underline — used sparingly) */
+    --accent: 38 38% 58%;              /* #b8a070 muted brushed gold */
+    --accent-foreground: 215 38% 9%;
+    --accent-bright: 40 50% 70%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 75% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 43 50% 25% / 0.18;
-    --border-strong: 43 56% 54%;
-    --input: 215 35% 18%;
-    --ring: 43 56% 54%;
+    --border: 213 25% 22%;
+    --border-strong: 38 38% 58%;
+    --input: 215 30% 18%;
+    --ring: 214 45% 38%;
 
-    --radius: 0.625rem;
+    --radius: 0.5rem;
 
-    /* Premium gradients */
-    --gradient-hero: radial-gradient(circle at 80% 0%, hsl(210 60% 30% / 0.35), transparent 55%),
-                     radial-gradient(circle at 10% 90%, hsl(43 56% 54% / 0.08), transparent 50%),
-                     linear-gradient(180deg, hsl(215 55% 8%) 0%, hsl(213 53% 10%) 100%);
-    --gradient-deep: linear-gradient(180deg, hsl(215 55% 8%) 0%, hsl(213 50% 6%) 100%);
-    --gradient-promise: linear-gradient(160deg, hsl(213 53% 10%) 0%, hsl(215 55% 8%) 60%, hsl(213 50% 6%) 100%);
-    --gradient-format: linear-gradient(180deg, hsl(213 53% 10%) 0%, hsl(215 55% 8%) 100%);
-    --gradient-pricing: radial-gradient(circle at 85% 85%, hsl(43 56% 54% / 0.18), transparent 55%),
-                        linear-gradient(180deg, hsl(215 55% 8%) 0%, hsl(213 53% 10%) 100%);
-    --gradient-cta: radial-gradient(circle at 50% 50%, hsl(43 56% 54% / 0.18), transparent 60%),
-                    linear-gradient(180deg, hsl(218 55% 14%) 0%, hsl(215 55% 8%) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(43 56% 54%) 0%, hsl(44 82% 69%) 100%);
-
-    /* Subtle grid */
-    --grid-color: hsl(213 60% 20% / 0.35);
+    /* Gradients matched to PDF imagery */
+    --gradient-hero-overlay: linear-gradient(
+      180deg,
+      hsl(215 45% 8% / 0.55) 0%,
+      hsl(215 45% 8% / 0.7) 45%,
+      hsl(215 50% 6% / 0.92) 100%
+    );
+    --gradient-hero-side: linear-gradient(
+      90deg,
+      hsl(215 50% 6% / 0.85) 0%,
+      hsl(215 45% 10% / 0.55) 45%,
+      hsl(214 45% 28% / 0.35) 100%
+    );
+    --gradient-deep: linear-gradient(180deg, hsl(215 38% 9%) 0%, hsl(215 40% 6%) 100%);
+    --gradient-mid: linear-gradient(180deg, hsl(214 32% 14%) 0%, hsl(215 38% 9%) 100%);
+    --gradient-pricing: radial-gradient(circle at 80% 80%, hsl(38 38% 58% / 0.12), transparent 55%),
+                        linear-gradient(180deg, hsl(215 38% 9%) 0%, hsl(215 40% 6%) 100%);
+    --gradient-cta: radial-gradient(circle at 50% 50%, hsl(214 45% 28% / 0.45), transparent 65%),
+                    linear-gradient(180deg, hsl(214 32% 14%) 0%, hsl(215 38% 9%) 100%);
+    --gradient-blue-band: linear-gradient(90deg, hsl(214 45% 28%) 0%, hsl(215 50% 20%) 100%);
 
     /* Shadows */
-    --shadow-gold: 0 10px 40px -10px hsl(43 56% 54% / 0.45);
-    --shadow-gold-intense: 0 14px 50px -10px hsl(44 82% 69% / 0.6);
-    --shadow-card: 0 8px 30px -12px hsl(213 50% 4% / 0.6);
+    --shadow-card: 0 14px 36px -16px hsl(215 50% 4% / 0.7);
+    --shadow-blue: 0 14px 40px -12px hsl(214 45% 28% / 0.55);
+    --shadow-gold-soft: 0 8px 30px -10px hsl(38 38% 58% / 0.3);
 
-    /* Transitions */
     --transition-smooth: cubic-bezier(0.22, 1, 0.36, 1);
   }
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; }
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'DM Sans', system-ui, sans-serif;
-    background-color: hsl(var(--background));
+    font-family: 'Lato', system-ui, -apple-system, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.005em;
   }
   ::selection {
-    background: hsl(var(--primary) / 0.4);
+    background: hsl(var(--primary) / 0.6);
     color: hsl(var(--foreground));
   }
 }
 
 @layer utilities {
-  .font-display { font-family: 'Playfair Display', serif; }
-  .font-body { font-family: 'DM Sans', system-ui, sans-serif; }
-  .font-stat { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.02em; }
+  .font-display { font-family: 'Barlow Condensed', 'Lato', sans-serif; letter-spacing: 0.01em; }
+  .font-body { font-family: 'Lato', system-ui, sans-serif; }
+  .font-stat { font-family: 'Bebas Neue', 'Barlow Condensed', sans-serif; letter-spacing: 0.02em; }
 
-  .text-gold { color: hsl(var(--primary-glow)); }
-  .text-gold-deep { color: hsl(var(--primary)); }
+  .text-gold { color: hsl(var(--accent-bright)); }
+  .text-gold-deep { color: hsl(var(--accent)); }
   .text-soft { color: hsl(var(--foreground-soft)); }
   .text-dim { color: hsl(var(--foreground-muted)); }
   .text-dimmer { color: hsl(var(--foreground-dim)); }
+  .text-steel { color: hsl(var(--primary-light)); }
 
   .bg-deep { background: hsl(var(--background-deep)); }
   .bg-darker { background: hsl(var(--background-darker)); }
   .bg-mid { background: hsl(var(--background-mid)); }
+  .bg-blue-band { background: var(--gradient-blue-band); }
 
-  .bg-grid {
-    background-image:
-      linear-gradient(hsl(213 60% 25% / 0.08) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(213 60% 25% / 0.08) 1px, transparent 1px);
-    background-size: 56px 56px;
-  }
-
-  .gradient-hero { background: var(--gradient-hero); }
   .gradient-deep { background: var(--gradient-deep); }
-  .gradient-promise { background: var(--gradient-promise); }
-  .gradient-format { background: var(--gradient-format); }
+  .gradient-mid { background: var(--gradient-mid); }
   .gradient-pricing { background: var(--gradient-pricing); }
   .gradient-cta { background: var(--gradient-cta); }
 
-  .border-gold { border-color: hsl(var(--primary) / 0.4); }
-  .border-gold-soft { border-color: hsl(var(--primary) / 0.18); }
-  .border-gold-strong { border-color: hsl(var(--primary) / 0.7); }
-
-  .shadow-gold { box-shadow: var(--shadow-gold); }
-  .shadow-gold-intense { box-shadow: var(--shadow-gold-intense); }
-  .shadow-card-premium { box-shadow: var(--shadow-card); }
-
-  .card-premium {
-    background: hsl(0 0% 100% / 0.035);
-    border: 1px solid hsl(var(--primary) / 0.15);
-    backdrop-filter: blur(6px);
+  /* Hero photo treatment — matches PDF's blue duotone overlay */
+  .hero-photo {
+    background-image: var(--gradient-hero-side), var(--gradient-hero-overlay), var(--hero-image, none);
+    background-size: cover, cover, cover;
+    background-position: center, center, center 30%;
+    background-blend-mode: normal, multiply, normal;
   }
 
-  .gold-divider {
-    background: linear-gradient(90deg, transparent, hsl(var(--primary) / 0.55), transparent);
+  .border-gold { border-color: hsl(var(--accent) / 0.45); }
+  .border-gold-soft { border-color: hsl(var(--accent) / 0.22); }
+  .border-gold-strong { border-color: hsl(var(--accent) / 0.7); }
+  .border-steel { border-color: hsl(var(--primary) / 0.5); }
+
+  .shadow-card-premium { box-shadow: var(--shadow-card); }
+  .shadow-blue { box-shadow: var(--shadow-blue); }
+  .shadow-gold-soft { box-shadow: var(--shadow-gold-soft); }
+
+  .card-premium {
+    background: hsl(214 32% 14% / 0.7);
+    border: 1px solid hsl(213 25% 24%);
+    backdrop-filter: blur(6px);
+  }
+  .card-elevated {
+    background: linear-gradient(180deg, hsl(214 32% 16%) 0%, hsl(215 35% 11%) 100%);
+    border: 1px solid hsl(213 25% 22%);
+  }
+
+  .gold-rule {
+    background: linear-gradient(90deg, transparent, hsl(var(--accent) / 0.6), transparent);
+    height: 1px;
+  }
+  .steel-rule {
+    background: linear-gradient(90deg, transparent, hsl(var(--primary-light) / 0.4), transparent);
     height: 1px;
   }
 
-  /* Pulsing gold dot */
-  @keyframes pulse-gold {
-    0%, 100% { box-shadow: 0 0 0 0 hsl(var(--primary) / 0.7); }
-    50% { box-shadow: 0 0 0 8px hsl(var(--primary) / 0); }
+  /* Pulsing accent dot */
+  @keyframes pulse-accent {
+    0%, 100% { box-shadow: 0 0 0 0 hsl(var(--accent) / 0.65); }
+    50% { box-shadow: 0 0 0 8px hsl(var(--accent) / 0); }
   }
-  .pulse-dot {
-    animation: pulse-gold 2.2s ease-in-out infinite;
-  }
+  .pulse-dot { animation: pulse-accent 2.4s ease-in-out infinite; }
 
   @keyframes fade-up {
     from { opacity: 0; transform: translateY(14px); }
     to { opacity: 1; transform: translateY(0); }
   }
-  .animate-fade-up { animation: fade-up 0.7s var(--transition-smooth) both; }
+  .animate-fade-up { animation: fade-up 0.8s var(--transition-smooth) both; }
 
   .hover-lift {
     transition: transform 280ms var(--transition-smooth),
@@ -166,21 +178,54 @@
                 background-color 280ms var(--transition-smooth);
   }
   .hover-lift:hover {
-    transform: translateY(-4px);
-    border-color: hsl(var(--primary) / 0.55);
+    transform: translateY(-3px);
+    border-color: hsl(var(--accent) / 0.5);
+    background-color: hsl(214 32% 17% / 0.85);
   }
 
-  .btn-gold {
-    background: var(--gradient-gold);
+  /* Primary CTA — steel blue (matches PDF brand band) */
+  .btn-primary {
+    background: var(--gradient-blue-band);
     color: hsl(var(--primary-foreground));
-    font-weight: 600;
-    letter-spacing: 0.01em;
-    box-shadow: var(--shadow-gold);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-size: 0.82rem;
+    border: 1px solid hsl(var(--accent) / 0.5);
+    box-shadow: var(--shadow-blue);
+    transition: all 280ms var(--transition-smooth);
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 50px -10px hsl(214 45% 28% / 0.7), 0 0 0 1px hsl(var(--accent) / 0.7);
+    filter: brightness(1.12);
+  }
+
+  /* Gold accent CTA — used on the pricing card only (highest hierarchy) */
+  .btn-gold {
+    background: linear-gradient(135deg, hsl(38 42% 60%) 0%, hsl(40 50% 70%) 100%);
+    color: hsl(215 50% 12%);
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    box-shadow: var(--shadow-gold-soft);
     transition: all 280ms var(--transition-smooth);
   }
   .btn-gold:hover {
     transform: translateY(-2px);
-    box-shadow: var(--shadow-gold-intense);
-    filter: brightness(1.05);
+    box-shadow: 0 14px 50px -10px hsl(40 50% 70% / 0.55);
+    filter: brightness(1.08);
+  }
+
+  .label-eyebrow {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-size: 0.7rem;
+    color: hsl(var(--accent));
   }
 }

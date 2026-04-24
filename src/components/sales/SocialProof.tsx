@@ -15,7 +15,7 @@ const SocialProof = () => {
       <div className="container py-24 md:py-32">
         <div className="max-w-3xl">
           <SectionLabel>Autoridade comprovada</SectionLabel>
-          <h2 className="font-display text-3xl md:text-5xl leading-[1.1] mt-5 text-foreground">
+          <h2 className="font-display font-light text-3xl md:text-5xl leading-[1.1] mt-5 text-foreground tracking-tight">
             Os números de quem forma <span className="text-gold">a elite do Lean Six Sigma</span> no Brasil.
           </h2>
         </div>
