@@ -1,4 +1,4 @@
-import SectionLabel from "./SectionLabel";
+import SectionHeader from "./SectionHeader";
 
 const inclusos: { icon: "check" | "star"; text: string }[] = [
   { icon: "check", text: "8 módulos completos com 168 horas de formação" },
@@ -25,7 +25,7 @@ const Pricing = () => {
           </h2>
         </div>
 
-        <div className="mt-16 max-w-[720px] mx-auto">
+        <div className="mt-12 max-w-[720px] mx-auto">
           <div
             className="rounded-sm p-8 md:p-10 relative card-elevated border-gold-strong"
             style={{ boxShadow: "0 30px 80px -20px hsl(214 45% 28% / 0.5), 0 0 0 1px hsl(38 38% 58% / 0.3)" }}

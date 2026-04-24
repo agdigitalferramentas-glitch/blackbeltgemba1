@@ -1,4 +1,4 @@
-import SectionLabel from "./SectionLabel";
+import SectionHeader from "./SectionHeader";
 
 const personas = [
   {

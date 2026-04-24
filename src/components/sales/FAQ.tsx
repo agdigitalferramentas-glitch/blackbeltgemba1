@@ -1,5 +1,5 @@
 import { useState } from "react";
-import SectionLabel from "./SectionLabel";
+import SectionHeader from "./SectionHeader";
 
 const faqs = [
   {
