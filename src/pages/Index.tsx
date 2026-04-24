@@ -6,6 +6,7 @@ import Promise from "@/components/sales/Promise";
 import Modules from "@/components/sales/Modules";
 import Audience from "@/components/sales/Audience";
 import SocialProof from "@/components/sales/SocialProof";
+import Testimonials from "@/components/sales/Testimonials";
 import Format from "@/components/sales/Format";
 import Mentoring from "@/components/sales/Mentoring";
 import Pricing from "@/components/sales/Pricing";
@@ -24,6 +25,7 @@ const Index = () => {
       <Modules />
       <Audience />
       <SocialProof />
+      <Testimonials />
       <Format />
       <Mentoring />
       <Pricing />
