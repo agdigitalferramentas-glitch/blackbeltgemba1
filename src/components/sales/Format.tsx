@@ -1,4 +1,4 @@
-import SectionLabel from "./SectionLabel";
+import SectionHeader from "./SectionHeader";
 
 const items = [
   {
@@ -30,16 +30,15 @@ const items = [
 
 const Format = () => {
   return (
-    <section className="gradient-format">
-      <div className="container py-16 md:py-20">
-        <div className="max-w-3xl">
-          <SectionLabel>Como funciona</SectionLabel>
-          <h2 className="font-display font-light text-3xl md:text-5xl leading-[1.1] mt-5 text-foreground tracking-tight">
-            Uma formação executiva que <span className="text-gold">respeita o seu tempo.</span>
-          </h2>
-        </div>
+    <section className="gradient-format relative overflow-hidden">
+      <div className="absolute inset-0 bg-grid bg-grid-fade opacity-40 pointer-events-none" />
+      <div className="orb orb-steel w-[460px] h-[460px] -top-24 right-0" />
+      <div className="container relative py-12 md:py-16">
+        <SectionHeader eyebrow="Como funciona">
+          Uma formação executiva que <span className="text-gold">respeita o seu tempo.</span>
+        </SectionHeader>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-14">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-12">
           {items.map((it, idx) => (
             <div
               key={it.title}

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import SectionLabel from "./SectionLabel";
+import SectionHeader from "./SectionHeader";
 
 const faqs = [
   {
@@ -32,16 +32,14 @@ const FAQ = () => {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="bg-darker">
-      <div className="container py-16 md:py-20">
-        <div className="max-w-3xl">
-          <SectionLabel>Perguntas frequentes</SectionLabel>
-          <h2 className="font-display font-light text-3xl md:text-5xl leading-[1.1] mt-5 text-foreground tracking-tight">
-            Tem dúvidas antes de decidir? <span className="text-gold">A gente responde com clareza.</span>
-          </h2>
-        </div>
+    <section className="bg-darker relative overflow-hidden">
+      <div className="orb orb-steel w-[420px] h-[420px] top-0 -left-24" />
+      <div className="container relative py-12 md:py-16">
+        <SectionHeader eyebrow="Perguntas frequentes">
+          Tem dúvidas antes de decidir? <span className="text-gold">A gente responde com clareza.</span>
+        </SectionHeader>
 
-        <div className="mt-12 max-w-3xl space-y-3">
+        <div className="mt-10 max-w-3xl mx-auto space-y-3">
           {faqs.map((f, i) => {
             const isOpen = open === i;
             return (

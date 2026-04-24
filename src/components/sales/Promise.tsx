@@ -1,18 +1,16 @@
-import SectionLabel from "./SectionLabel";
+import SectionHeader from "./SectionHeader";
 
 const Promise = () => {
   return (
-    <section className="gradient-mid">
-      <div className="container py-16 md:py-20">
-        <div className="max-w-3xl">
-          <SectionLabel>O que muda quando você se torna Black Belt</SectionLabel>
-          <h2 className="font-display font-light text-3xl md:text-5xl leading-[1.1] mt-5 text-foreground tracking-tight">
-            Você para de resolver problemas.{" "}
-            <span className="text-soft font-normal">Começa a eliminar as causas que nenhum outro profissional encontra.</span>
-          </h2>
-        </div>
+    <section className="gradient-mid relative overflow-hidden">
+      <div className="orb orb-gold w-[500px] h-[500px] top-0 left-1/2 -translate-x-1/2" />
+      <div className="container relative py-12 md:py-16">
+        <SectionHeader eyebrow="O que muda quando você se torna Black Belt">
+          Você para de resolver problemas.{" "}
+          <span className="text-soft font-normal">Começa a eliminar as causas que nenhum outro profissional encontra.</span>
+        </SectionHeader>
 
-        <div className="mt-16 max-w-4xl mx-auto relative">
+        <div className="mt-14 max-w-4xl mx-auto relative">
           <div
             aria-hidden
             className="absolute -top-10 left-0 font-display text-accent/30 text-[7rem] md:text-[10rem] leading-none select-none"
