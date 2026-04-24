@@ -28,7 +28,7 @@ const Hero = () => {
                   <span className="absolute inset-0 rounded-full bg-accent pulse-dot" />
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-accent-bright" />
                 </span>
-                Gemba Group &amp; Produzzi
+                Gemba Group
               </div>
             </div>
 
