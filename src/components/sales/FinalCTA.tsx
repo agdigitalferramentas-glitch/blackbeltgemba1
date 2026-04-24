@@ -1,7 +1,7 @@
 const FinalCTA = () => {
   return (
     <section className="gradient-cta relative overflow-hidden">
-      <div className="container relative py-24 md:py-32">
+      <div className="container relative py-16 md:py-20">
         <div className="max-w-3xl mx-auto text-center">
           <h2
             className="font-display font-light text-foreground leading-[1.05] tracking-tight"
