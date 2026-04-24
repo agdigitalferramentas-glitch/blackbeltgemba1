@@ -12,7 +12,6 @@ import Pricing from "@/components/sales/Pricing";
 import FAQ from "@/components/sales/FAQ";
 import FinalCTA from "@/components/sales/FinalCTA";
 import Footer from "@/components/sales/Footer";
-import StickyBar from "@/components/sales/StickyBar";
 
 const Index = () => {
   return (
@@ -31,7 +30,6 @@ const Index = () => {
       <FAQ />
       <FinalCTA />
       <Footer />
-      <StickyBar />
     </main>
   );
 };

@@ -3,7 +3,7 @@ import SectionLabel from "./SectionLabel";
 const Promise = () => {
   return (
     <section className="gradient-mid">
-      <div className="container py-24 md:py-32">
+      <div className="container py-16 md:py-20">
         <div className="max-w-3xl">
           <SectionLabel>O que muda quando você se torna Black Belt</SectionLabel>
           <h2 className="font-display font-light text-3xl md:text-5xl leading-[1.1] mt-5 text-foreground tracking-tight">
