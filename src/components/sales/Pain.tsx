@@ -1,4 +1,4 @@
-import SectionLabel from "./SectionLabel";
+import SectionHeader from "./SectionHeader";
 
 const cards = [
   {
@@ -25,16 +25,14 @@ const cards = [
 
 const Pain = () => {
   return (
-    <section className="bg-darker">
-      <div className="container py-12 md:py-16">
-        <div className="max-w-3xl">
-          <SectionLabel>Você está nesse ponto?</SectionLabel>
-          <h2 className="font-display font-light text-3xl md:text-5xl leading-[1.1] mt-5 text-foreground tracking-tight">
-            Se você se reconhece em algum desses cenários — <span className="text-gold">é hora de agir.</span>
-          </h2>
-        </div>
+    <section className="bg-darker relative overflow-hidden">
+      <div className="orb orb-gold w-[480px] h-[480px] -bottom-32 -right-32" />
+      <div className="container relative py-12 md:py-16">
+        <SectionHeader eyebrow="Você está nesse ponto?">
+          Se você se reconhece em algum desses cenários — <span className="text-gold">é hora de agir.</span>
+        </SectionHeader>
 
-        <div className="grid md:grid-cols-2 gap-5 mt-14">
+        <div className="grid md:grid-cols-2 gap-5 mt-12">
           {cards.map((c) => (
             <div
               key={c.title}

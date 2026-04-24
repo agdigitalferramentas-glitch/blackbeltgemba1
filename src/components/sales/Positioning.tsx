@@ -1,4 +1,4 @@
-import SectionLabel from "./SectionLabel";
+import SectionHeader from "./SectionHeader";
 
 const cards = [
   {
@@ -20,27 +20,20 @@ const cards = [
 
 const Positioning = () => {
   return (
-    <section className="relative bg-mid">
-      <div className="container py-12 md:py-16">
-        <div className="max-w-3xl">
-          <SectionLabel>Por que o Black Belt é diferente</SectionLabel>
-          <h2 className="font-display font-light text-3xl md:text-5xl leading-[1.1] mt-5 text-foreground tracking-tight">
-            Não é mais sobre aplicar ferramentas.{" "}
-            <span className="text-gold">É sobre gerar milhões em resultado</span>{" "}
-            e provar que você vale cada centavo.
-          </h2>
-          <p className="mt-6 text-dim text-base md:text-lg leading-relaxed">
-            O Green Belt resolve problemas. O Black Belt lidera transformações
-            de alta complexidade, com impacto direto no resultado financeiro
-            da organização. Com 168 horas de formação avançada, você vai além
-            do DMAIC convencional — domina Testes de Hipóteses, DOE, análise
-            de sistemas de medição para dados de atributo, Logística Lean,
-            Kaizen e ferramentas que poucos profissionais no Brasil conhecem
-            na profundidade necessária para gerar savings reais e mensuráveis.
-          </p>
-        </div>
+    <section className="relative bg-mid overflow-hidden">
+      <div className="absolute inset-0 bg-grid bg-grid-fade opacity-60 pointer-events-none" />
+      <div className="orb orb-steel w-[520px] h-[520px] -top-40 -left-40" />
+      <div className="container relative py-12 md:py-16">
+        <SectionHeader
+          eyebrow="Por que o Black Belt é diferente"
+          description="O Green Belt resolve problemas. O Black Belt lidera transformações de alta complexidade, com impacto direto no resultado financeiro da organização. Com 168 horas de formação avançada, você vai além do DMAIC convencional — domina Testes de Hipóteses, DOE, análise de sistemas de medição para dados de atributo, Logística Lean, Kaizen e ferramentas que poucos profissionais no Brasil conhecem na profundidade necessária para gerar savings reais e mensuráveis."
+        >
+          Não é mais sobre aplicar ferramentas.{" "}
+          <span className="text-gold">É sobre gerar milhões em resultado</span>{" "}
+          e provar que você vale cada centavo.
+        </SectionHeader>
 
-        <div className="grid md:grid-cols-3 gap-5 mt-14">
+        <div className="grid md:grid-cols-3 gap-5 mt-12">
           {cards.map((c) => (
             <div
               key={c.title}
