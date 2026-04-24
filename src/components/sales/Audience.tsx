@@ -30,7 +30,7 @@ const Audience = () => {
       <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full pointer-events-none"
            style={{ background: "radial-gradient(circle, hsl(43 56% 54% / 0.12), transparent 60%)" }} />
       <div className="absolute inset-0 bg-grid opacity-[0.4] pointer-events-none" />
-      <div className="container relative py-16 md:py-20">
+      <div className="container relative py-12 md:py-16">
         <div className="max-w-3xl">
           <SectionLabel>Para quem é esta formação</SectionLabel>
           <h2 className="font-display font-light text-3xl md:text-5xl leading-[1.1] mt-5 text-foreground tracking-tight">

@@ -31,7 +31,7 @@ const items = [
 const Format = () => {
   return (
     <section className="gradient-format">
-      <div className="container py-16 md:py-20">
+      <div className="container py-12 md:py-16">
         <div className="max-w-3xl">
           <SectionLabel>Como funciona</SectionLabel>
           <h2 className="font-display font-light text-3xl md:text-5xl leading-[1.1] mt-5 text-foreground tracking-tight">

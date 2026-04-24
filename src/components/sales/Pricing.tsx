@@ -15,7 +15,7 @@ const inclusos: { icon: "check" | "star"; text: string }[] = [
 const Pricing = () => {
   return (
     <section id="pricing" className="gradient-pricing relative overflow-hidden">
-      <div className="container relative py-16 md:py-20">
+      <div className="container relative py-12 md:py-16">
         <div className="max-w-3xl mx-auto text-center">
           <div className="flex justify-center">
             <SectionLabel>Investimento</SectionLabel>

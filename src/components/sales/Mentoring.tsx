@@ -21,7 +21,7 @@ const cards = [
 const Mentoring = () => {
   return (
     <section className="bg-background">
-      <div className="container py-16 md:py-20">
+      <div className="container py-12 md:py-16">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           <div>
             <SectionLabel>Suporte especializado</SectionLabel>
