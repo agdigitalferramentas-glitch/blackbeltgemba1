@@ -133,17 +133,33 @@ const Testimonials = () => {
         <div
           role="dialog"
           aria-modal="true"
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-background-deep/90 backdrop-blur-sm p-4 animate-fade-in"
-          onClick={() => setActive(null)}
+          aria-label="Player de vídeo de depoimento"
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-background-deep/95 backdrop-blur-md p-4 sm:p-8 animate-fade-in"
+          onClick={closeVideo}
         >
-          <button
-            type="button"
-            onClick={() => setActive(null)}
-            className="absolute top-5 right-5 h-10 w-10 rounded-full bg-background/80 border border-gold-soft text-foreground flex items-center justify-center hover:bg-accent hover:text-background transition-colors"
-            aria-label="Fechar vídeo"
+          {/* Top bar with prominent close button */}
+          <div
+            className="absolute top-0 inset-x-0 flex items-center justify-between gap-4 p-4 sm:p-6"
+            onClick={(e) => e.stopPropagation()}
           >
-            <X className="h-5 w-5" />
-          </button>
+            <div className="text-[10px] sm:text-xs uppercase tracking-[0.22em] text-dim hidden sm:flex items-center gap-2">
+              <kbd className="px-2 py-1 rounded border border-gold-soft bg-background/60 text-gold font-mono text-[10px]">
+                Esc
+              </kbd>
+              para fechar
+            </div>
+            <button
+              ref={closeBtnRef}
+              type="button"
+              onClick={closeVideo}
+              className="ml-auto group inline-flex items-center gap-2 rounded-sm bg-accent text-background px-4 py-2.5 sm:px-5 sm:py-3 font-bold uppercase tracking-[0.18em] text-xs shadow-gold-soft hover:brightness-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background-deep transition-all"
+              aria-label="Fechar vídeo (Esc)"
+            >
+              <X className="h-4 w-4" strokeWidth={3} />
+              <span>Fechar</span>
+            </button>
+          </div>
+
           <div
             className="relative w-full max-w-5xl aspect-video rounded-sm overflow-hidden border border-gold-soft shadow-blue"
             onClick={(e) => e.stopPropagation()}
