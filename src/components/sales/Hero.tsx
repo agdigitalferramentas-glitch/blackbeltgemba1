@@ -30,14 +30,15 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Logo lockup */}
-          <div className="mt-8 animate-fade-up">
+          {/* Logo lockup — uses screen blend so the dark navy bg melts into the photo */}
+          <div className="mt-8 animate-fade-up -ml-2">
             <img
               src={logoImage}
               alt="Black Belt Lean Six Sigma — certificação oficial"
               width={1268}
               height={400}
-              className="w-full max-w-[640px] h-auto select-none"
+              className="w-full max-w-[620px] h-auto select-none"
+              style={{ mixBlendMode: "screen" }}
               draggable={false}
             />
           </div>
