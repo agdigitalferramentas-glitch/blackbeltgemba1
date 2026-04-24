@@ -1,5 +1,5 @@
-import heroImage from "@/assets/hero-executive.jpg";
-import logoImage from "@/assets/black-belt-logo-original.jpg";
+import heroImage from "@/assets/hero-executive.webp";
+import logoImage from "@/assets/black-belt-logo-original.webp";
 
 const stats = [
   { value: "168h", label: "Carga horária total" },
@@ -70,6 +70,8 @@ const Hero = () => {
               alt="Black Belt Lean Six Sigma — certificação oficial Gemba Group"
               width={890}
               height={296}
+              fetchPriority="high"
+              decoding="async"
               className="w-full max-w-[440px] lg:max-w-none h-auto select-none drop-shadow-[0_8px_40px_rgba(0,0,0,0.55)]"
               draggable={false}
             />
