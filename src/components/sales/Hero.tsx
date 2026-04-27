@@ -68,8 +68,8 @@ const Hero = () => {
             <img
               src={logoImage}
               alt="Black Belt Lean Six Sigma — certificação oficial Gemba Group"
-              width={890}
-              height={296}
+              width={1622}
+              height={507}
               fetchPriority="high"
               decoding="async"
               className="w-full max-w-[440px] lg:max-w-none h-auto select-none drop-shadow-[0_8px_40px_rgba(0,0,0,0.55)]"
