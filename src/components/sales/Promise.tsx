@@ -6,8 +6,9 @@ const Promise = () => {
       <div className="orb orb-gold w-[500px] h-[500px] top-0 left-1/2 -translate-x-1/2" />
       <div className="container relative py-12 md:py-16">
         <SectionHeader eyebrow="O que muda quando você se torna Black Belt">
-          Você para de resolver problemas.{" "}
-          <span className="text-soft font-normal">Começa a eliminar as causas que nenhum outro profissional encontra.</span>
+          Enquanto outros resolvem sintomas,{" "}
+          <span className="text-gold">você elimina as causas</span>{" "}
+          <span className="text-soft font-normal">que ninguém consegue identificar.</span>
         </SectionHeader>
 
         <div className="mt-14 max-w-4xl mx-auto relative">

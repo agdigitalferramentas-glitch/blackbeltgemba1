@@ -41,7 +41,7 @@ const Pricing = () => {
               <div className="font-stat text-foreground text-[3.6rem] md:text-[4.2rem] leading-none mt-2">
                 R$ 5.225<span className="text-2xl text-soft">,00</span>
               </div>
-              <div className="text-sm text-dim mt-2">Você economiza R$ 275,00 pagando à vista</div>
+              
             </div>
 
             <div className="flex items-center gap-3 my-6">
