@@ -151,20 +151,6 @@ const Modules = () => {
           ))}
         </div>
 
-        <div className="mt-12 rounded-xl border border-gold-strong bg-primary/[0.06] p-6 md:p-8">
-          <div className="flex items-start gap-3">
-            <span className="text-gold text-xl">★</span>
-            <div>
-              <div className="font-display text-foreground text-lg md:text-xl mb-2">
-                O que o Black Belt tem a mais que o Green Belt
-              </div>
-              <p className="text-dim text-sm md:text-base leading-relaxed">
-                Logística Lean · Kaizen · CEP Atributo · MSA Atributo · Testes
-                de Hipóteses · Exercícios complementares integrados em cada fase.
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
