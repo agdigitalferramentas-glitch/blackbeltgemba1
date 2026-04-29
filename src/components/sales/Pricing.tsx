@@ -5,7 +5,7 @@ const inclusos: { icon: "check" | "star"; text: string }[] = [
   { icon: "check", text: "Conteúdo exclusivo Black Belt: Testes de Hipóteses, Logística Lean, Kaizen e MSA Atributo" },
   { icon: "check", text: "Aulas ao vivo via Teams — terças e quintas, 19h30–22h30" },
   { icon: "check", text: "1h de mentoria individual durante o curso" },
-  { icon: "check", text: "2h de mentoria pós-formação para seu projeto" },
+  
   { icon: "check", text: "Projeto real aplicado na sua empresa, fase a fase" },
   { icon: "check", text: "Banca de avaliação com consultor sênior certificado" },
   { icon: "star", text: "Certificação Internacional — Council for Six Sigma" },
