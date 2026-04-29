@@ -77,7 +77,7 @@ const Hero = () => {
           </div>
 
           {/* RIGHT — official logo lockup */}
-          <div className="lg:col-span-5 flex justify-center lg:justify-end animate-fade-up">
+          <div className="hidden lg:flex lg:col-span-5 justify-center lg:justify-end animate-fade-up">
             <img
               src={logoImage}
               alt="Black Belt Lean Six Sigma — certificação oficial Gemba Group"
