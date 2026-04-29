@@ -7,11 +7,6 @@ const cards = [
     text: "Sessões agendadas no início do treinamento para orientar a aplicação das ferramentas no seu projeto fase a fase.",
   },
   {
-    badge: "2h · após",
-    title: "Mentoria pós-formação",
-    text: "Suporte especializado após o último dia de aula para finalizar e apresentar seu projeto com a profundidade que o Black Belt exige.",
-  },
-  {
     badge: "✓ · banca",
     title: "Avaliação final com consultor sênior",
     text: "Apresente seu projeto a um especialista certificado, receba feedback técnico aprofundado e conquiste sua certificação Black Belt.",
