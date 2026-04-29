@@ -3,13 +3,13 @@ import SectionHeader from "./SectionHeader";
 const cards = [
   {
     badge: "1h · durante",
-    title: "Mentoria durante o curso",
-    text: "Sessões agendadas no início do treinamento para orientar a aplicação das ferramentas no seu projeto fase a fase.",
+    title: "Mentoria durante o curso",
+    text: "Sessões agendadas no início do treinamento para orientar a aplicação das ferramentas no seu projeto fase a fase.",
   },
   {
     badge: "✓ · banca",
-    title: "Avaliação final com consultor sênior",
-    text: "Apresente seu projeto a um especialista certificado, receba feedback técnico aprofundado e conquiste sua certificação Black Belt.",
+    title: "Avaliação final com consultor sênior",
+    text: "Apresente seu projeto a um especialista certificado, receba feedback técnico aprofundado e conquiste sua certificação Black Belt.",
   },
 ];
 
@@ -20,7 +20,7 @@ const Mentoring = () => {
       <div className="container relative py-12 md:py-16">
         <SectionHeader
           eyebrow="Suporte especializado"
-          description="Cada aluno tem acesso a mentorias individuais com consultores da Gemba Group — profissionais que atuam ativamente em projetos nas maiores empresas do Brasil. Durante e após o curso, você recebe orientação para garantir que seu projeto evolua com consistência e gere os resultados esperados."
+          description="Cada aluno tem acesso a mentorias individuais com consultores da Gemba Group — profissionais que atuam ativamente em projetos nas maiores empresas do Brasil. Durante e após o curso, você recebe orientação para garantir que seu projeto evolua com consistência e gere os resultados esperados."
         >
           Consultores que <span className="text-gold">vivem o que ensinam.</span> Não apenas professores.
         </SectionHeader>

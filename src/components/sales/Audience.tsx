@@ -3,24 +3,24 @@ import SectionHeader from "./SectionHeader";
 const personas = [
   {
     icon: "🏆",
-    title: "O Green Belt que Quer Avançar",
+    title: "O Green Belt que Quer Avançar",
     sub: "Analista Sênior / Coordenador · com certificação GB",
-    text: "Já concluiu o Green Belt e sente que chegou na fronteira do seu impacto atual. Quer dominar Testes de Hipóteses, trabalhar com dados de atributo e liderar projetos de escala que justifiquem a ascensão ao próximo nível de carreira.",
-    outcome: "Conquistou o Black Belt e assumiu projetos que geraram savings de seis dígitos no primeiro ano.",
+    text: "Já concluiu o Green Belt e sente que chegou na fronteira do seu impacto atual. Quer dominar Testes de Hipóteses, trabalhar com dados de atributo e liderar projetos de escala que justifiquem a ascensão ao próximo nível de carreira.",
+    outcome: "Conquistou o Black Belt e assumiu projetos que geraram savings de seis dígitos no primeiro ano.",
   },
   {
     icon: "💡",
-    title: "O Líder que Quer Ser Indispensável",
+    title: "O Líder que Quer Ser Indispensável",
     sub: "Gerente / Supervisor · 35–50 anos",
-    text: "Já tem resultados, mas precisa de uma metodologia avançada para conduzir transformações complexas, apresentar resultados financeiros para o board e se tornar referência interna como guardião da excelência operacional.",
-    outcome: "Tornou-se o líder que a diretoria aciona quando o problema é sério e o impacto precisa ser financeiramente comprovado.",
+    text: "Já tem resultados, mas precisa de uma metodologia avançada para conduzir transformações complexas, apresentar resultados financeiros para o board e se tornar referência interna como guardião da excelência operacional.",
+    outcome: "Tornou-se o líder que a diretoria aciona quando o problema é sério e o impacto precisa ser financeiramente comprovado.",
   },
   {
     icon: "🎯",
-    title: "O Consultor em Formação",
+    title: "O Consultor em Formação",
     sub: "Engenheiro / Especialista · busca autonomia",
-    text: "Quer sair do modelo CLT e construir uma carreira como consultor independente ou especialista de mercado. Sabe que o Black Belt é o credencial mínimo para cobrar honorários de elite.",
-    outcome: "Construiu portfólio de projetos, saiu do CLT e passou a faturar como consultor com autoridade técnica reconhecida.",
+    text: "Quer sair do modelo CLT e construir uma carreira como consultor independente ou especialista de mercado. Sabe que o Black Belt é o credencial mínimo para cobrar honorários de elite.",
+    outcome: "Construiu portfólio de projetos, saiu do CLT e passou a faturar como consultor com autoridade técnica reconhecida.",
   },
 ];
 
@@ -57,11 +57,11 @@ const Audience = () => {
             <span className="text-gold text-xl">★</span>
             <div>
               <div className="font-display text-foreground text-lg md:text-xl mb-2">
-                O que o Black Belt tem a mais que o Green Belt
+                O que o Black Belt tem a mais que o Green Belt
               </div>
               <p className="text-dim text-sm md:text-base leading-relaxed">
                 Logística Lean · Kaizen · CEP Atributo · MSA Atributo · Testes
-                de Hipóteses · Exercícios complementares integrados em cada fase.
+                de Hipóteses · Exercícios complementares integrados em cada fase.
               </p>
             </div>
           </div>

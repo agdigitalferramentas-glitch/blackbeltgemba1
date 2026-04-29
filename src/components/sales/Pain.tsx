@@ -3,23 +3,23 @@ import SectionHeader from "./SectionHeader";
 const cards = [
   {
     icon: "🧱",
-    title: "Teto de carreira invisível",
-    text: "Você já entrega resultados, mas percebe que sem uma formação de nível superior não consegue acessar os cargos de diretoria, gerência sênior ou consultoria de alto valor.",
+    title: "Teto de carreira invisível",
+    text: "Você já entrega resultados, mas percebe que sem uma formação de nível superior não consegue acessar os cargos de diretoria, gerência sênior ou consultoria de alto valor.",
   },
   {
     icon: "📉",
-    title: "Projetos sem profundidade estatística",
-    text: "Você aplica metodologias, mas na hora de justificar as causas com dados robustos — Testes de Hipóteses, DOE, análise de variância — falta a ferramenta certa para ter autoridade técnica.",
+    title: "Projetos sem profundidade estatística",
+    text: "Você aplica metodologias, mas na hora de justificar as causas com dados robustos — Testes de Hipóteses, DOE, análise de variância — falta a ferramenta certa para ter autoridade técnica.",
   },
   {
     icon: "💼",
-    title: "Salário estagnado apesar da experiência",
-    text: "Você tem anos de mercado, mas não tem o credencial que justifica uma negociação salarial agressiva. O Black Belt é o argumento que nenhum gestor de RH contesta.",
+    title: "Salário estagnado apesar da experiência",
+    text: "Você tem anos de mercado, mas não tem o credencial que justifica uma negociação salarial agressiva. O Black Belt é o argumento que nenhum gestor de RH contesta.",
   },
   {
     icon: "🏢",
-    title: "Invisível para a alta liderança",
-    text: "Você opera bem no nível tático, mas a diretoria não te vê como líder de grandes iniciativas. Falta a autoridade técnica e a linguagem de impacto financeiro que o Black Belt ensina.",
+    title: "Invisível para a alta liderança",
+    text: "Você opera bem no nível tático, mas a diretoria não te vê como líder de grandes iniciativas. Falta a autoridade técnica e a linguagem de impacto financeiro que o Black Belt ensina.",
   },
 ];
 
