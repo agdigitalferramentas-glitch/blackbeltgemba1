@@ -26,6 +26,11 @@ const items = [
     title: "Projeto Real com Alto Impacto",
     text: "Você desenvolve um projeto real na sua empresa ao longo de toda a formação, gerando resultados mensuráveis antes mesmo de concluir.",
   },
+  {
+    icon: "🔁",
+    title: "Acesso às Gravações",
+    text: "Perdeu algum encontro ao vivo? Sem problemas. Todas as aulas ficam disponíveis na nossa plataforma para você repor e assistir quantas vezes quiser, sem colocar a sua certificação em risco.",
+  },
 ];
 
 const Format = () => {
