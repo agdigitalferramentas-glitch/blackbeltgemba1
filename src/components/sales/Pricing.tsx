@@ -59,18 +59,6 @@ const Pricing = () => {
               <div className="text-sm text-dim mt-2">Total R$ 5.500,00 · sem acréscimos</div>
             </div>
 
-            {/* Inclusos */}
-            <ul className="mt-8 space-y-3">
-              {inclusos.map((i) => (
-                <li key={i.text} className="flex items-start gap-3 text-sm text-soft">
-                  <span className={i.icon === "star" ? "text-gold mt-0.5" : "text-primary-light mt-0.5"} aria-hidden>
-                    {i.icon === "star" ? "★" : "✓"}
-                  </span>
-                  <span>{i.text}</span>
-                </li>
-              ))}
-            </ul>
-
             <a
               href="#"
               className="btn-gold mt-8 w-full inline-flex items-center justify-center rounded-sm px-8 py-4 text-base"
@@ -81,6 +69,20 @@ const Pricing = () => {
             <div className="text-center text-xs text-dimmer mt-5">
               Ambiente seguro · Início 06/07/2026 · Vagas extremamente limitadas
             </div>
+
+            <div className="my-8 h-px bg-border" />
+
+            {/* Inclusos */}
+            <ul className="space-y-3">
+              {inclusos.map((i) => (
+                <li key={i.text} className="flex items-start gap-3 text-sm text-soft">
+                  <span className={i.icon === "star" ? "text-gold mt-0.5" : "text-primary-light mt-0.5"} aria-hidden>
+                    {i.icon === "star" ? "★" : "✓"}
+                  </span>
+                  <span>{i.text}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
