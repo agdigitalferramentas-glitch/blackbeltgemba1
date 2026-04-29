@@ -44,10 +44,10 @@ const Format = () => {
         </SectionHeader>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-12">
-          {items.map((it, idx) => (
+          {items.map((it) => (
             <div
               key={it.title}
-              className={`card-premium hover-lift rounded-xl p-7 ${idx === 4 ? "lg:col-start-2" : ""}`}
+              className="card-premium hover-lift rounded-xl p-7"
             >
               <div className="text-3xl text-gold mb-4">{it.icon}</div>
               <h3 className="font-display text-lg text-foreground mb-3">{it.title}</h3>
