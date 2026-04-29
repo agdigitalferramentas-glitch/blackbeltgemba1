@@ -9,6 +9,7 @@ const Promise = lazy(() => import("@/components/sales/Promise"));
 const Modules = lazy(() => import("@/components/sales/Modules"));
 const Audience = lazy(() => import("@/components/sales/Audience"));
 const SocialProof = lazy(() => import("@/components/sales/SocialProof"));
+const LogosMarquee = lazy(() => import("@/components/sales/LogosMarquee"));
 const Testimonials = lazy(() => import("@/components/sales/Testimonials"));
 const Format = lazy(() => import("@/components/sales/Format"));
 const Mentoring = lazy(() => import("@/components/sales/Mentoring"));
@@ -31,6 +32,7 @@ const Index = () => {
         <Modules />
         <Audience />
         <SocialProof />
+        <LogosMarquee />
         <Testimonials />
         <Format />
         <Mentoring />
