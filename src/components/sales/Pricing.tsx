@@ -1,10 +1,10 @@
 import SectionHeader from "./SectionHeader";
 
 const inclusos: { icon: "check" | "star"; text: string }[] = [
-  { icon: "check", text: "8 módulos completos com 168 horas de formação" },
+  { icon: "check", text: "8 módulos completos com 152h de aulas ao vivo" },
+  { icon: "check", text: "8h de coaching para certificação dos projetos (2h dentro do cronograma + 3 encontros bimestrais de 2h)" },
   { icon: "check", text: "Conteúdo exclusivo Black Belt: Testes de Hipóteses, Logística Lean, Kaizen e MSA Atributo" },
   { icon: "check", text: "Aulas ao vivo via Teams — terças e quintas, 19h30–22h30" },
-  { icon: "check", text: "1h de mentoria individual durante o curso" },
   
   { icon: "check", text: "Projeto real aplicado na sua empresa, fase a fase" },
   { icon: "check", text: "Banca de avaliação com consultor sênior certificado" },

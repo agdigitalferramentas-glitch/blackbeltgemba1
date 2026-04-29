@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: "Qual é a carga horária e quanto tempo dura o curso?",
-    a: "A formação Black Belt tem 168 horas totais de treinamento, com aulas às terças e quintas das 19h30 às 22h30 via Microsoft Teams. A data de início é 06/07/2026. A duração exata em semanas é confirmada no momento da matrícula.",
+    a: "A formação Black Belt tem 152 horas de aulas ao vivo, somadas a 8 horas de coaching para certificação dos projetos (sendo 2 horas dentro do cronograma das aulas e 6 horas em 3 encontros bimestrais de 2h durante os 6 meses após o encerramento das aulas). As aulas acontecem às terças e quintas das 19h30 às 22h30 via Microsoft Teams, com início em 06/07/2026.",
   },
   {
     q: "Posso parcelar sem juros?",

@@ -2,7 +2,7 @@ import heroImage from "@/assets/hero-executive.webp";
 import logoImage from "@/assets/black-belt-logo-original.webp";
 
 const stats = [
-  { value: "168h", label: "Carga horária total" },
+  { value: "160h", label: "152h aulas + 8h coaching" },
   { value: "+1Bi", label: "Em ganhos gerados" },
   { value: "+30mil", label: "Profissionais formados" },
   { value: "17 anos", label: "Referência nacional" },
