@@ -21,6 +21,19 @@ const Hero = () => {
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-8 items-center">
           {/* LEFT — copy */}
           <div className="lg:col-span-7">
+            {/* Mobile-only logo above badge */}
+            <div className="lg:hidden mb-6 animate-fade-up">
+              <img
+                src={logoImage}
+                alt="Black Belt Lean Six Sigma — certificação oficial Gemba Group"
+                width={1622}
+                height={507}
+                fetchPriority="high"
+                decoding="async"
+                className="w-1/2 h-auto select-none drop-shadow-[0_8px_40px_rgba(0,0,0,0.55)]"
+                draggable={false}
+              />
+            </div>
             {/* Badge */}
             <div className="animate-fade-up">
               <div className="inline-flex items-center gap-2.5 rounded-sm border border-gold-soft bg-background/40 backdrop-blur px-4 py-2 text-[10px] sm:text-xs uppercase tracking-[0.22em] text-soft">
@@ -64,7 +77,7 @@ const Hero = () => {
           </div>
 
           {/* RIGHT — official logo lockup */}
-          <div className="lg:col-span-5 flex justify-center lg:justify-end animate-fade-up">
+          <div className="hidden lg:flex lg:col-span-5 justify-center lg:justify-end animate-fade-up">
             <img
               src={logoImage}
               alt="Black Belt Lean Six Sigma — certificação oficial Gemba Group"
