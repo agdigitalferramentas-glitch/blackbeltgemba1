@@ -14,7 +14,7 @@ const FinalCTA = () => {
             Poucos profissionais chegam a esse nível. Os que chegam tornam-se
             referência — na empresa, no mercado e na carreira. A turma começa
             em 06 de julho. As vagas são poucas e quem decide agora garante o
-            lugar na formação mais avançada do Lean Six Sigma no Brasil.
+            lugar na formação mais avançada do Lean Six Sigma no&nbsp;Brasil.
           </p>
 
           <div className="mt-10">
