@@ -56,7 +56,7 @@ const Hero = () => {
               Black Belt Lean Six Sigma — a certificação de maior prestígio na
               hierarquia do Lean Six Sigma. Domine projetos de alto impacto
               financeiro, lidere equipes de alta performance e torne-se a
-              referência técnica do seu\u00A0setor.
+              referência técnica do seu setor.
             </p>
 
             {/* CTAs */}
