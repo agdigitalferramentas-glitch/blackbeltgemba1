@@ -26,7 +26,7 @@ const Positioning = () => {
       <div className="container relative py-12 md:py-16">
         <SectionHeader
           eyebrow="Por que o Black Belt é diferente"
-          description="Com 168 horas de formação avançada, você vai além do DMAIC convencional — domina Testes de Hipóteses, DOE, análise de sistemas de medição para dados de atributo, Logística Lean, Kaizen e ferramentas que poucos profissionais no Brasil conhecem na profundidade necessária para gerar savings reais e mensuráveis."
+          description="Com 160 horas de formação avançada, você vai além do DMAIC convencional — domina Testes de Hipóteses, DOE, análise de sistemas de medição para dados de atributo, Logística Lean, Kaizen e ferramentas que poucos profissionais no Brasil conhecem na profundidade necessária para gerar savings reais e mensuráveis."
         >
           Não é mais sobre aplicar ferramentas.{" "}
           <span className="text-gold">É sobre gerar milhões em resultado</span>{" "}
