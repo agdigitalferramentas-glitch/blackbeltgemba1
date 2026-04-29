@@ -126,7 +126,7 @@ const Modules = () => {
             >
               <span
                 aria-hidden
-                className="absolute -top-2 -right-2 font-stat text-[5.5rem] leading-none text-secondary-bright/25 select-none"
+                className="absolute -top-2 -right-2 font-stat text-[5.5rem] leading-none text-secondary-bright/10 select-none"
               >
                 {m.n}
               </span>
