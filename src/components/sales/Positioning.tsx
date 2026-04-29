@@ -3,18 +3,18 @@ import SectionHeader from "./SectionHeader";
 const cards = [
   {
     icon: "📊",
-    title: "Profundidade Técnica",
-    text: "O Black Belt aprofunda cada fase do DMAIC com ferramentas complementares que o Green Belt não cobre — incluindo Testes de Hipóteses e MSA para Dados de Atributo.",
+    title: "Profundidade Técnica",
+    text: "O Black Belt aprofunda cada fase do DMAIC com ferramentas complementares que o Green Belt não cobre — incluindo Testes de Hipóteses e MSA para Dados de Atributo.",
   },
   {
     icon: "💰",
-    title: "Impacto Financeiro Real",
-    text: "A certificação mais exigida quando o assunto é economizar ou gerar milhões para a empresa. O mercado paga salários de elite para quem domina esse nível.",
+    title: "Impacto Financeiro Real",
+    text: "A certificação mais exigida quando o assunto é economizar ou gerar milhões para a empresa. O mercado paga salários de elite para quem domina esse nível.",
   },
   {
     icon: "🎯",
-    title: "Liderança Estratégica",
-    text: "Você não apenas executa projetos — gerencia times, orienta Green Belts e responde diretamente para a alta direção sobre resultados de melhoria contínua.",
+    title: "Liderança Estratégica",
+    text: "Você não apenas executa projetos — gerencia times, orienta Green Belts e responde diretamente para a alta direção sobre resultados de melhoria contínua.",
   },
 ];
 
@@ -26,7 +26,7 @@ const Positioning = () => {
       <div className="container relative py-12 md:py-16">
         <SectionHeader
           eyebrow="Por que o Black Belt é diferente"
-          description="Com 160 horas de formação avançada, você vai além do DMAIC convencional — domina Testes de Hipóteses, DOE, análise de sistemas de medição para dados de atributo, Logística Lean, Kaizen e ferramentas que poucos profissionais no Brasil conhecem na profundidade necessária para gerar savings reais e mensuráveis."
+          description="Com 160 horas de formação avançada, você vai além do DMAIC convencional — domina Testes de Hipóteses, DOE, análise de sistemas de medição para dados de atributo, Logística Lean, Kaizen e ferramentas que poucos profissionais no Brasil conhecem na profundidade necessária para gerar savings reais e mensuráveis."
         >
           Não é mais sobre aplicar ferramentas.{" "}
           <span className="text-gold">É sobre gerar milhões em resultado</span>{" "}

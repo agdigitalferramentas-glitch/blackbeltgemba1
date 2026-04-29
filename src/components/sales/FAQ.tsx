@@ -20,15 +20,15 @@ const faqs = [
   },
   {
     q: "Posso parcelar sem juros?",
-    a: "Sim. Em até 6x sem juros no cartão de crédito, com parcelas de R$ 916,67 (total R$ 5.500,00). Quem pagar à vista tem 5% de desconto e paga R$ 5.225,00.",
+    a: "Sim. Em até 6x sem juros no cartão de crédito, com parcelas de R$ 916,67 (total R$ 5.500,00). Quem pagar à vista tem 5% de desconto e paga R$ 5.225,00.",
   },
   {
     q: "E se eu perder alguma aula ao vivo?",
-    a: "Você não será prejudicado. Todas as aulas ao vivo são gravadas e sobem para a nossa plataforma. Se houver imprevistos, você pode acessar e repor o conteúdo assistindo quantas vezes quiser, sem que isso coloque em risco a sua certificação final.",
+    a: "Você não será prejudicado. Todas as aulas ao vivo são gravadas e sobem para a nossa plataforma. Se houver imprevistos, você pode acessar e repor o conteúdo assistindo quantas vezes quiser, sem que isso coloque em risco a sua certificação final.",
   },
   {
     q: "Como funciona o projeto Black Belt para certificação?",
-    a: "Você desenvolve um projeto real de alta complexidade na sua empresa ao longo de toda a formação, aplicando cada fase do DMAIC com profundidade Black Belt. Ao final, apresenta o projeto a um consultor sênior da Gemba Group, recebe avaliação técnica aprofundada e obtém sua certificação.",
+    a: "Você desenvolve um projeto real de alta complexidade na sua empresa ao longo de toda a formação, aplicando cada fase do DMAIC com profundidade Black Belt. Ao final, apresenta o projeto a um consultor sênior da Gemba Group, recebe avaliação técnica aprofundada e obtém sua certificação.",
   },
 ];
 

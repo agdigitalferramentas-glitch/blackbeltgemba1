@@ -3,33 +3,33 @@ import SectionHeader from "./SectionHeader";
 const items = [
   {
     icon: "🖥️",
-    title: "100% Online ao Vivo",
-    text: "Aulas ao vivo via Microsoft Teams. Interação real com o instrutor, perguntas respondidas no momento e aprendizado aplicado na prática.",
+    title: "100% Online ao Vivo",
+    text: "Aulas ao vivo via Microsoft Teams. Interação real com o instrutor, perguntas respondidas no momento e aprendizado aplicado na prática.",
   },
   {
     icon: "📅",
     title: "Terças e Quintas — 19h30 às 22h30",
-    text: "Início em 06/07/2026. Formato noturno para quem não pode abrir mão da rotina profissional.",
+    text: "Início em 06/07/2026. Formato noturno para quem não pode abrir mão da rotina profissional.",
   },
   {
     icon: "📋",
     title: "152h de Aulas + 8h de Coaching",
-    text: "152 horas de aulas ao vivo somadas a 8 horas de coaching para certificação dos projetos — a maior carga horária do mercado para um programa Black Belt online ao vivo, com profundidade técnica real.",
+    text: "152 horas de aulas ao vivo somadas a 8 horas de coaching para certificação dos projetos — a maior carga horária do mercado para um programa Black Belt online ao vivo, com profundidade técnica real.",
   },
   {
     icon: "🎓",
-    title: "Certificação Internacional",
-    text: "Credenciada pelo Council for Six Sigma. O mesmo padrão exigido por Volvo, Renault e as maiores empresas do mundo.",
+    title: "Certificação Internacional",
+    text: "Credenciada pelo Council for Six Sigma. O mesmo padrão exigido por Volvo, Renault e as maiores empresas do mundo.",
   },
   {
     icon: "🛠️",
-    title: "Projeto Real com Alto Impacto",
-    text: "Você desenvolve um projeto real na sua empresa ao longo de toda a formação, gerando resultados mensuráveis antes mesmo de concluir.",
+    title: "Projeto Real com Alto Impacto",
+    text: "Você desenvolve um projeto real na sua empresa ao longo de toda a formação, gerando resultados mensuráveis antes mesmo de concluir.",
   },
   {
     icon: "🔁",
-    title: "Acesso às Gravações",
-    text: "Perdeu algum encontro ao vivo? Sem problemas. Todas as aulas ficam disponíveis na nossa plataforma para você repor e assistir quantas vezes quiser, sem colocar a sua certificação em risco.",
+    title: "Acesso às Gravações",
+    text: "Perdeu algum encontro ao vivo? Sem problemas. Todas as aulas ficam disponíveis na nossa plataforma para você repor e assistir quantas vezes quiser, sem colocar a sua certificação em risco.",
   },
 ];
 

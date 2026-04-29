@@ -25,7 +25,7 @@ const Promise = () => {
               visão de impacto financeiro. Após a formação, você conduz projetos
               complexos que geram economia real e transformam o negócio de dentro
               para fora. Esse é o padrão que as melhores empresas do Brasil e do
-              mundo procuram e pagam para ter.
+              mundo procuram e pagam para ter.
             </p>
             <div className="gold-rule mt-8" />
           </blockquote>
