@@ -7,11 +7,6 @@ const cards = [
     text: "Sessões agendadas no início do treinamento para orientar a aplicação das ferramentas no seu projeto fase a fase.",
   },
   {
-    badge: "2h · após",
-    title: "Mentoria pós-formação",
-    text: "Suporte especializado após o último dia de aula para finalizar e apresentar seu projeto com a profundidade que o Black Belt exige.",
-  },
-  {
     badge: "✓ · banca",
     title: "Avaliação final com consultor sênior",
     text: "Apresente seu projeto a um especialista certificado, receba feedback técnico aprofundado e conquiste sua certificação Black Belt.",
@@ -30,7 +25,7 @@ const Mentoring = () => {
           Consultores que <span className="text-gold">vivem o que ensinam.</span> Não apenas professores.
         </SectionHeader>
 
-        <div className="mt-12 grid md:grid-cols-3 gap-5 max-w-5xl mx-auto">
+        <div className="mt-12 grid md:grid-cols-2 gap-5 max-w-3xl mx-auto">
           {cards.map((c) => (
             <div key={c.title} className="card-premium hover-lift rounded-xl p-6">
               <div className="inline-flex items-center text-[10px] uppercase tracking-[0.2em] text-primary-foreground bg-primary px-3 py-1 rounded-full font-semibold">
