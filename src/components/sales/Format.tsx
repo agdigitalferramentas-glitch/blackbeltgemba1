@@ -26,6 +26,11 @@ const items = [
     title: "Projeto Real com Alto Impacto",
     text: "Você desenvolve um projeto real na sua empresa ao longo de toda a formação, gerando resultados mensuráveis antes mesmo de concluir.",
   },
+  {
+    icon: "🔁",
+    title: "Acesso às Gravações",
+    text: "Perdeu algum encontro ao vivo? Sem problemas. Todas as aulas ficam disponíveis na nossa plataforma para você repor e assistir quantas vezes quiser, sem colocar a sua certificação em risco.",
+  },
 ];
 
 const Format = () => {
@@ -39,10 +44,10 @@ const Format = () => {
         </SectionHeader>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-12">
-          {items.map((it, idx) => (
+          {items.map((it) => (
             <div
               key={it.title}
-              className={`card-premium hover-lift rounded-xl p-7 ${idx === 4 ? "lg:col-start-2" : ""}`}
+              className="card-premium hover-lift rounded-xl p-7"
             >
               <div className="text-3xl text-gold mb-4">{it.icon}</div>
               <h3 className="font-display text-lg text-foreground mb-3">{it.title}</h3>
