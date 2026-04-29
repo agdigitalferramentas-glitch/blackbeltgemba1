@@ -1,10 +1,10 @@
 import SectionHeader from "./SectionHeader";
 
 const inclusos: { icon: "check" | "star"; text: string }[] = [
-  { icon: "check", text: "8 módulos completos com 168 horas de formação" },
+  { icon: "check", text: "8 módulos completos com 152h de aulas ao vivo" },
+  { icon: "check", text: "8h de coaching para certificação dos projetos (2h dentro do cronograma + 3 encontros bimestrais de 2h)" },
   { icon: "check", text: "Conteúdo exclusivo Black Belt: Testes de Hipóteses, Logística Lean, Kaizen e MSA Atributo" },
   { icon: "check", text: "Aulas ao vivo via Teams — terças e quintas, 19h30–22h30" },
-  { icon: "check", text: "1h de mentoria individual durante o curso" },
   
   { icon: "check", text: "Projeto real aplicado na sua empresa, fase a fase" },
   { icon: "check", text: "Banca de avaliação com consultor sênior certificado" },
@@ -38,10 +38,13 @@ const Pricing = () => {
             {/* À vista — destaque */}
             <div className="mt-8 rounded-sm p-6 border border-gold-strong bg-accent/[0.05] text-center">
               <div className="label-eyebrow text-gold-deep">À vista — Melhor oferta · 5%</div>
-              <div className="font-stat text-foreground text-[3.6rem] md:text-[4.2rem] leading-none mt-2">
+              <div className="text-sm text-dimmer mt-3 line-through decoration-1">
+                De R$ 8.997,00
+              </div>
+              <div className="font-stat text-foreground text-[3.6rem] md:text-[4.2rem] leading-none mt-1">
                 R$ 5.225<span className="text-2xl text-soft">,00</span>
               </div>
-              
+              <div className="text-xs text-dim mt-2">via Pix · 5% de desconto</div>
             </div>
 
             <div className="flex items-center gap-3 my-6">

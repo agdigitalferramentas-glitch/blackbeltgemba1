@@ -114,7 +114,7 @@ const Modules = () => {
       <div className="absolute inset-0 bg-grid bg-grid-fade opacity-50 pointer-events-none" />
       <div className="orb orb-steel w-[460px] h-[460px] top-20 -right-32" />
       <div className="container relative py-12 md:py-16">
-        <SectionHeader eyebrow="Conteúdo completo — 168 horas">
+        <SectionHeader eyebrow="Conteúdo completo — 152h de aulas + 8h de coaching">
           8 Módulos. <span className="text-gold">O DMAIC na sua forma</span> mais completa e avançada.
         </SectionHeader>
 

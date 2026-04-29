@@ -13,8 +13,8 @@ const items = [
   },
   {
     icon: "📋",
-    title: "168 Horas de Formação",
-    text: "A maior carga horária do mercado para um programa Black Belt online ao vivo — com profundidade técnica real.",
+    title: "152h de Aulas + 8h de Coaching",
+    text: "152 horas de aulas ao vivo somadas a 8 horas de coaching para certificação dos projetos — a maior carga horária do mercado para um programa Black Belt online ao vivo, com profundidade técnica real.",
   },
   {
     icon: "🎓",
