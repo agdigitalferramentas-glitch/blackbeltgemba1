@@ -2,10 +2,10 @@ import heroImage from "@/assets/hero-executive.webp";
 import logoImage from "@/assets/black-belt-logo-original.webp";
 
 const stats = [
-  { value: "160h", label: "152h aulas + 8h coaching" },
-  { value: "+1Bi", label: "Em ganhos gerados" },
-  { value: "+30mil", label: "Profissionais formados" },
-  { value: "17 anos", label: "Referência nacional" },
+  { value: "160h", label: "152h aulas + 8h\u00A0coaching" },
+  { value: "+1Bi", label: "Em ganhos\u00A0gerados" },
+  { value: "+30mil", label: "Profissionais\u00A0formados" },
+  { value: "17 anos", label: "Referência\u00A0nacional" },
 ];
 
 const Hero = () => {
