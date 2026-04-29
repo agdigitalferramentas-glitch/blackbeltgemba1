@@ -38,10 +38,13 @@ const Pricing = () => {
             {/* À vista — destaque */}
             <div className="mt-8 rounded-sm p-6 border border-gold-strong bg-accent/[0.05] text-center">
               <div className="label-eyebrow text-gold-deep">À vista — Melhor oferta · 5%</div>
-              <div className="font-stat text-foreground text-[3.6rem] md:text-[4.2rem] leading-none mt-2">
+              <div className="text-sm text-dimmer mt-3 line-through decoration-1">
+                De R$ 8.997,00
+              </div>
+              <div className="font-stat text-foreground text-[3.6rem] md:text-[4.2rem] leading-none mt-1">
                 R$ 5.225<span className="text-2xl text-soft">,00</span>
               </div>
-              
+              <div className="text-xs text-dim mt-2">via Pix · 5% de desconto</div>
             </div>
 
             <div className="flex items-center gap-3 my-6">
