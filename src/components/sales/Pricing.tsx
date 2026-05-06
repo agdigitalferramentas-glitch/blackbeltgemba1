@@ -63,7 +63,7 @@ const Pricing = () => {
             </div>
 
             <a
-              href="#"
+              href="https://celcash.celcoin.com.br/landingpage8400068/black-belt/comprar/elite-black-belt-lean-eamp-six-sigma/3"
               className="btn-gold mt-8 w-full inline-flex items-center justify-center rounded-sm px-8 py-4 text-base"
             >
               Garantir minha vaga Black Belt →
