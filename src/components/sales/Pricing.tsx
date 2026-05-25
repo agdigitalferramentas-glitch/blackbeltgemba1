@@ -17,7 +17,6 @@ const inclusos: { icon: "check" | "star"; text: string }[] = [
 ];
 
 const Pricing = () => {
-const Pricing = () => {
   const [modalOpen, setModalOpen] = useState(false);
   return (
     <section id="pricing" className="gradient-pricing relative overflow-hidden">
