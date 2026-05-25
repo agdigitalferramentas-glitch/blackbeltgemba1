@@ -1,4 +1,8 @@
+import { useState } from "react";
 import SectionHeader from "./SectionHeader";
+import PreCheckoutModal from "./PreCheckoutModal";
+
+const CHECKOUT_URL = "https://celcash.celcoin.com.br/landingpage8400068/black-belt/comprar/elite-black-belt-lean-eamp-six-sigma/3";
 
 const inclusos: { icon: "check" | "star"; text: string }[] = [
   { icon: "check", text: "8 módulos completos com 152h de aulas ao vivo" },
@@ -13,7 +17,9 @@ const inclusos: { icon: "check" | "star"; text: string }[] = [
 ];
 
 const Pricing = () => {
+  const [modalOpen, setModalOpen] = useState(false);
   return (
+    <>
     <section id="pricing" className="gradient-pricing relative overflow-hidden">
       <div className="orb orb-gold w-[520px] h-[520px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
       <div className="container relative py-12 md:py-16">
@@ -74,12 +80,13 @@ const Pricing = () => {
               Falar com o comercial
             </a>
 
-            <a
-              href="https://celcash.celcoin.com.br/landingpage8400068/black-belt/comprar/elite-black-belt-lean-eamp-six-sigma/3"
+            <button
+              type="button"
+              onClick={() => setModalOpen(true)}
               className="btn-gold mt-3 w-full inline-flex items-center justify-center rounded-sm px-8 py-4 text-base"
             >
               Garantir minha vaga Black Belt →
-            </a>
+            </button>
 
             <div className="text-center text-xs text-dimmer mt-5">
               Ambiente seguro · Início 06/07/2026 · Vagas extremamente limitadas
@@ -102,6 +109,8 @@ const Pricing = () => {
         </div>
       </div>
     </section>
+    <PreCheckoutModal open={modalOpen} onClose={() => setModalOpen(false)} checkoutUrl={CHECKOUT_URL} />
+    </>
   );
 };
 
