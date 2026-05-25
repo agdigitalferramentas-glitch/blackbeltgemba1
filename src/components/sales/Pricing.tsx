@@ -79,12 +79,13 @@ const Pricing = () => {
               Falar com o comercial
             </a>
 
-            <a
-              href="https://celcash.celcoin.com.br/landingpage8400068/black-belt/comprar/elite-black-belt-lean-eamp-six-sigma/3"
+            <button
+              type="button"
+              onClick={() => setModalOpen(true)}
               className="btn-gold mt-3 w-full inline-flex items-center justify-center rounded-sm px-8 py-4 text-base"
             >
               Garantir minha vaga Black Belt →
-            </a>
+            </button>
 
             <div className="text-center text-xs text-dimmer mt-5">
               Ambiente seguro · Início 06/07/2026 · Vagas extremamente limitadas
