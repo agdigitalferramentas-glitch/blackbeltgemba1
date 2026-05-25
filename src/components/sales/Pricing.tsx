@@ -19,6 +19,7 @@ const inclusos: { icon: "check" | "star"; text: string }[] = [
 const Pricing = () => {
   const [modalOpen, setModalOpen] = useState(false);
   return (
+    <>
     <section id="pricing" className="gradient-pricing relative overflow-hidden">
       <div className="orb orb-gold w-[520px] h-[520px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
       <div className="container relative py-12 md:py-16">
