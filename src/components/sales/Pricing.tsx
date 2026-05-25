@@ -64,7 +64,7 @@ const Pricing = () => {
 
             <a
               href="https://wa.me/5541987617531?text=Ol%C3%A1!%20Vim%20do%20site%20e%20quero%20saber%20mais%20sobre%20a%20Certifica%C3%A7%C3%A3o%20Black%20Belt!"
-              className="mt-8 w-full inline-flex items-center justify-center rounded-sm px-8 py-4 text-base bg-[#25D366] text-white hover:bg-[#128C7E] transition-colors font-semibold"
+              className="mt-8 w-full inline-flex items-center justify-center rounded-sm px-8 py-4 text-base bg-[#128C7E] text-white hover:bg-[#0d6b5e] transition-colors font-semibold"
               target="_blank"
               rel="noopener noreferrer"
             >
