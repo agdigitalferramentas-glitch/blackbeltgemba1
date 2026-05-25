@@ -108,6 +108,8 @@ const Pricing = () => {
         </div>
       </div>
     </section>
+    <PreCheckoutModal open={modalOpen} onClose={() => setModalOpen(false)} checkoutUrl={CHECKOUT_URL} />
+    </>
   );
 };
 
