@@ -1,4 +1,8 @@
+import { useState } from "react";
 import SectionHeader from "./SectionHeader";
+import PreCheckoutModal from "./PreCheckoutModal";
+
+const CHECKOUT_URL = "https://celcash.celcoin.com.br/landingpage8400068/black-belt/comprar/elite-black-belt-lean-eamp-six-sigma/3";
 
 const inclusos: { icon: "check" | "star"; text: string }[] = [
   { icon: "check", text: "8 módulos completos com 152h de aulas ao vivo" },
